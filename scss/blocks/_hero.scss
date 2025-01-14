@@ -16,7 +16,7 @@
 }
 
 .swiper-slide:nth-child(2) {
-    @include BackgroundImage($BI:url("../../images/hero-img2.png"));
+    @include BackgroundImage($BI:url("../images/hero-img2.png"));
 }
 
 .swiper-slide:nth-child(3) {
