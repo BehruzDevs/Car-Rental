@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @mixin Display($space){
     display: flex;
@@ -26,4 +27,9 @@
     background-position: $BP; 
     background-repeat: $BR; 
     background-size: $BS; 
+=======
+@mixin Display(){
+    display: flex;
+    align-items: center;
+>>>>>>> d2ebc05dd9f0b6e366af7e9b97f37dbb6bf9b95c
 }
