@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 @mixin Display($space){
     display: flex;
@@ -14,22 +13,17 @@
     line-height: $LH;
     color: $CLR;
 }
-@mixin Position($PN,$R,$T,$L,$B){
+@mixin Position($PN,$T,$L,$R,$B){
     position: $PN;
     top: $T;
+    left: $L;
     right: $R;
     bottom: $B;
-    left: $L;
 }
-@mixin BacgroundImage($BI,$BS,$BP,$BR,$BC){
-    background-image:$BI; 
-    background-color:$BC; 
-    background-position: $BP; 
-    background-repeat: $BR; 
-    background-size: $BS; 
-=======
-@mixin Display(){
-    display: flex;
-    align-items: center;
->>>>>>> d2ebc05dd9f0b6e366af7e9b97f37dbb6bf9b95c
+@mixin BacgroundImage(){
+    background-image: $BI; 
+    background-color: $BC; 
+    background-position: $BP;
+    background-repeat: $BR;
+    background-size: $BS;
 }

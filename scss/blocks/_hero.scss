@@ -6,21 +6,21 @@
     width: 100%;
     height: 500px;
     border-radius: 30px;
-    @include Position($PN:relative !important);
+    position: relative !important;
 }
 
 .swiper-slide {
     padding-top: 60px;
     border-radius: 30px;
-    @include BacgroundImage($BI:url("../images/hero-img.png"),$BR:no-repeat,$BS:cover);
+    @include BacgroundImage($BI:url("../../images/hero-img.png"),$BR:no-repeat,$BS:cover);
 }
 
 .swiper-slide:nth-child(2) {
-    @include BacgroundImage($BI:url("../images/hero-img2.png"));
+    @include BacgroundImage($BI:url("../../images/hero-img2.png"));
 }
 
 .swiper-slide:nth-child(3) {
-    @include BacgroundImage($BI:url("../images/hero-img3.png"));
+    @include BacgroundImage($BI:url("../../images/hero-img3.png"));
 }
 
 
@@ -55,12 +55,11 @@
 }
 .swiper__title {
     margin-bottom: 10px;
-    @include TextStyle($FS:36px,$FW:600,$LH:43.88px);
+    @include TextStyle($FS:36px,$FW:600,$LH:43.88,$CLR:var(--clr-white));
     text-align: center;
-    color: white;
 }
 .swiper__text {
-    @include TextStyle($CLR:white,$FS:16px,$FW:400,$LH:19.5px);
+    @include TextStyle($FS:16px,$FW:400,$LH:19.5px,$CLR:var(--clr-white));
     text-align: center;
 }
 
@@ -81,7 +80,7 @@
     z-index: 9999;
     margin: 0 auto;
     margin-top: -33px;
-    @include Position($PN:relative);
+    position: relative;
     width: 600px;
     @include Display($space:start);
     background-color: white;
@@ -97,7 +96,6 @@
     outline: none;
     border: none;
     @include TextStyle($FS:18px,$FW:500,$LH:21.94px,$CLR:#555555);
-    
 }
 .hero__form-btn {
     @include Position($PN:absolute,$R:3px);
