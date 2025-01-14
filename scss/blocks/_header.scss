@@ -23,7 +23,7 @@
 }
 .navbar__item:nth-child(2) > .navbar__link::before, .navbar__item:nth-child(3) > .navbar__link::before{
     content: "";
-    @include BackgroundImage($BI:url("../../images/Icon.svg"),$BR:no-repeat,$BS:100%);
+    @include BackgroundImage($BI:url("../images/Icon.svg"),$BR:no-repeat,$BS:100%);
     width: 12px;
     height: 8px;
     display: inline-block;
