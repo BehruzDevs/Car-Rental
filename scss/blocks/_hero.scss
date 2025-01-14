@@ -12,15 +12,15 @@
 .swiper-slide {
     padding-top: 60px;
     border-radius: 30px;
-    @include BackgroundImage($BI:url("../../images/hero-img.png"),$BR:no-repeat,$BS:cover);
+    @include BacgroundImage($BI:url("../../images/hero1.png"),$BR:no-repeat,$BS:cover);
 }
 
 .swiper-slide:nth-child(2) {
-    @include BackgroundImage($BI:url("../images/hero-img2.png"));
+    @include BacgroundImage($BI:url("../../images/hero2.png"));
 }
 
 .swiper-slide:nth-child(3) {
-    @include BackgroundImage($BI:url("../../images/hero-img3.png"));
+    @include BacgroundImage($BI:url("../../images/hero3.png"));
 }
 
 
