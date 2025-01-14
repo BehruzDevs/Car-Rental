@@ -1,0 +1,29 @@
+
+@mixin Display($space){
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+@mixin TextStyle($MT,$P,$FS,$FW,$LH,$CLR){
+    margin-top: $MT;
+    padding: $P;
+    font-size: $FS;
+    font-weight: $FW;
+    line-height: $LH;
+    color: $CLR;
+}
+@mixin Position($PN,$R,$T,$L,$B){
+    position: $PN;
+    top: $T;
+    right: $R;
+    bottom: $B;
+    left: $L;
+}
+@mixin BacgroundImage($BI,$BS,$BP,$BR,$BC){
+    background-image:$BI; 
+    background-color:$BC; 
+    background-position: $BP; 
+    background-repeat: $BR; 
+    background-size: $BS; 
+}
