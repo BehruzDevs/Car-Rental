@@ -768,7 +768,6 @@ body {
 
 .brands-section {
   padding-top: 160px;
-  padding-bottom: 160px;
 }
 
 .brands-title {
@@ -787,4 +786,253 @@ body {
   display: flex;
   align-items: center;
   gap: 66px;
+}
+
+.service__main {
+  margin: 160px 0;
+}
+
+.service__content-top {
+  margin: 0 auto;
+  width: 648px;
+  text-align: center;
+}
+
+.service__top-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.88px;
+  color: var(--clr-black);
+}
+
+.service__top-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--input-plc-clr);
+}
+
+.service__card-wrapper {
+  margin-top: 40px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service__card {
+  position: relative;
+  width: 590px;
+  padding: 40px 40px 40px 32px;
+  border-radius: 20px;
+  background-color: var(--clr-gray);
+}
+
+.service__card-content {
+  width: 354px;
+  text-align: start;
+}
+
+.service__card-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39.01px;
+  color: var(--clr-black);
+}
+
+.service__card-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--input-plc-clr);
+}
+
+.service__card-logo {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.service__footer {
+  border: 1.5px solid var(--clr-line);
+  border-radius: 20px;
+  padding: 40px 32px;
+  background-image: url("./../../images/services_footer.jpg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 386px 472px;
+  background-position-x: 92%;
+}
+
+.services__footer-wrapper {
+  width: 100%;
+  width: 590px;
+}
+
+.services__footer-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.88px;
+  color: var(--clr-black);
+}
+
+.services__footer-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--input-plc-clr);
+}
+
+.service__footer-list {
+  margin-top: 94px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+
+.service__footer-item {
+  padding: 15px;
+  padding-top: 79px;
+  border-radius: 16px;
+  background-color: var(--clr-gray);
+  position: relative;
+  width: 200px;
+}
+
+.service-footer_item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--clr-black);
+}
+
+.padding-item {
+  padding-top: 22px;
+}
+
+.service__footer-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.footer {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer_left-top {
+  width: 240px;
+}
+
+.footer_left-title {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--input-plc-clr);
+}
+
+.footer__left-bottom {
+  padding-right: 153px;
+  margin-top: 84px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--clr-black);
+}
+
+.footer-right-wrapper {
+  width: 895px;
+  padding-top: 24px;
+}
+
+.footer-right-top {
+  width: 814px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right__top-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: var(--clr-black);
+}
+
+.footer-right__top-list {
+  margin-top: 16px;
+}
+
+.footer-right__top-item:not(:first-child) {
+  margin-top: 12px;
+}
+
+.footer-right__top-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: var(--input-plc-clr);
+}
+
+.footer-line {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 895px;
+  border: 1.5px solid var(--clr-line);
+}
+
+.footer-right-bottom {
+  width: 612px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right__bottom-list {
+  margin-top: 16px;
+}
+
+.footer-right__bottom-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: var(--clr-black);
+}
+
+.footer-flex {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-right__bottom-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: var(--input-plc-clr);
+}
+
+.footer-right__bottom-item:not(:first-child) {
+  margin-top: 12px;
+}
+
+.top-btn-slider {
+  position: absolute;
+  right: 120px;
+  bottom: 40px;
+  border-radius: 100px;
+  background-color: var(--clr-green);
+  width: 70px;
+  height: 70px;
+  outline: none;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

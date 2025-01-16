@@ -1,0 +1,86 @@
+.service__main{
+    margin: 160px 0;
+}
+.service__content-top {
+    margin: 0 auto;
+    width: 648px;
+    text-align: center;
+}
+.service__top-title {
+    @include TextStyle($fontSize:36px, $fontWeight:600,$lineHeight:43.88px,$color:var(--clr-black));
+
+}
+.service__top-text{
+    @include TextStyle($fontSize:16px, $fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr),$marginTop:10px);
+}
+.service__card-wrapper {
+    margin-top: 40px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service__card{
+    position: relative;
+    width: 590px;
+    padding: 40px 40px 40px 32px;
+    border-radius: 20px;
+    background-color: var(--clr-gray);
+}
+.service__card-content{
+    width: 354px;
+    text-align: start;
+}
+.service__card-title {
+    @include TextStyle($fontSize:32px,$fontWeight:500,$lineHeight:39.01px,$color:var(--clr-black))
+}
+.service__card-text {
+    @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr));
+}
+.service__card-logo {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.service__footer {
+    border: 1.5px solid var(--clr-line);
+    border-radius: 20px;
+    padding: 40px 32px;
+    @include Background($url:"./../../images/services_footer.jpg",$position:bottom right,$bg-repeat:no-repeat,$size:386px 472px);
+    background-position-x:92% ;
+}
+.services__footer-wrapper {
+    width: 100%;
+    width: 590px;
+}
+.services__footer-title {
+    @include TextStyle($fontSize:36px,$fontWeight:600,$lineHeight:43.88px,$color:var(--clr-black))
+}
+.services__footer-text {
+    @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr))
+}
+.service__footer-list {
+    margin-top: 94px;
+    gap: 10px;
+    @include Display($space:none);
+}
+.service__footer-item {
+    padding: 15px;
+    padding-top: 79px;
+    border-radius:16px;
+    background-color: var(--clr-gray);
+    position: relative;
+    width: 200px;
+}
+.service-footer_item-text {
+    @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
+}
+.padding-item{
+    padding-top: 22px
+}
+.service__footer-image{
+    position: absolute;
+    top: 20px;
+    right:20px;
+}
