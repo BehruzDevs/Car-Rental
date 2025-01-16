@@ -1,0 +1,202 @@
+.community {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+}
+.community__wrapper {
+    display: flex;
+    align-items:center ;
+    border-radius: 20px;
+}
+.community__text-wrapper {
+    background-color: var(--clr-white);
+    padding: 70px;
+    border-radius: 20px 0 0 20px;
+
+}
+.community-logo {
+    width: 134px;
+    @include Display($space:space-between);
+    margin-bottom: 16px;
+}
+.community__logo-text {
+    @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:#4285F4);
+}
+.community-text{
+    width: 320px;
+}
+.community-title{
+    @include TextStyle($fontSize:38px,$fontWeight:500,$lineHeight:50px,$color:var(--clr-black))
+}
+.community-text-gradient{
+    margin: 30px 0;
+    display: block;
+    width: 330px;
+    height: 2px;
+    background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+}
+.instagram-title {
+    @include TextStyle($fontSize:14px,$fontWeight:500,$lineHeight:17.07px,$color:var(--input-plc-clr));
+}
+
+    .instagram-btn {
+        margin-top: 16px;
+        width: 194px;
+        height: 58px;
+        position: relative;
+        display: inline-block;
+        background: white; /* Matnning foni */
+        cursor: pointer;
+        color: transparent; /* Matnni ko'rinmas qilish */
+        background-clip: text; /* Matnning orqasiga gradientni qo'llash */
+        -webkit-background-clip: text; /* Safari uchun */
+        -webkit-text-fill-color: transparent; /* Safari matnni gradientda ko'rsatadi */
+        background-image: radial-gradient(
+          230.93% 230.93% at 102.01% 2.03%,
+          #F9ED32 0%,
+          #EE2A7B 36%,
+          #D22A8A 44%,
+          #8B2AB2 60%,
+          #1B2AF0 83%,
+          #002AFF 88%
+        );
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        z-index: 1;
+        overflow: hidden; /* Chegaradan tashqaridagi elementlarni yashirish */
+      }
+      
+      .instagram-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        padding: 1.5px; /* Chegaraning qalinligi */
+        border-radius: 100px; /* Dumaloq chekkalar */
+        background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+      }
+      
+
+
+.community__swiper {
+    overflow: hidden;
+    background-color: var(--clr-green);
+    width: 730px;
+    height: 479px;
+    border-radius:0 20px 20px 0;
+    position: relative;
+}
+.community__swiper-slide.swiper-slide{
+    width: 420px !important;
+    height: 333px;
+    position: relative;
+    background-image: none;
+}
+.community__swiper-wrapper {
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 50px 90px;
+}
+.community__swiper-slide {
+    position: relative;
+    border-radius: 20px;
+    padding: 24px;
+    background-color: var(--clr-white);
+    width: 420px;
+    height: 333px;
+}
+.community__swiper-slide .swiper-slide img{
+    width: null;
+    height: null;
+    
+}
+.community__info-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+
+}
+.community-info {
+    margin-right: 66px;
+    margin-left: 12px;
+}
+.community-info-title {
+    @include TextStyle($fontSize:16px,$fontWeight:600,$lineHeight:19.5px,$color:var(--clr-black))
+}
+.community-info-link {
+    @include TextStyle($fontSize:14px,$fontWeight:400,$lineHeight:17.07px,$color:var(--input-plc-clr))
+}
+.community__swiper-text{
+    @include TextStyle($fontSize:14px,$fontWeight:400,$lineHeight:20px,$color:var(--clr-black))
+}
+.community-line {
+    position: absolute;
+    bottom: 68px;
+    display: block;
+    border: 1.5px solid var(--clr-line);
+    width: 372px;
+}
+.community-stars {
+    position: absolute;
+    bottom: 24px;
+    width: 218px;
+    @include Display($space:space-between);
+    margin-top: 24px;
+}
+.swiper-buttons{
+    @include Position($status:absolute,$bottom:40px,$right:40px);
+    width: 105px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    @include Position($status:absolute,$bottom:40px,$left:566px);
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50%;
+    background-color: white;
+    @include Display($space: center);
+    color: #000 !important;
+}
+.swiper-button-prev{
+    @include Position($status:absolute,$bottom:40px,$left:566px);
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50%;
+    background-color: white;
+    @include Display($space: center);
+    color: #000 !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 10px !important;
+}
+.community__swiper.swiper-button-next{
+    left: var(--swiper-navigation-sides-offset);
+    right: 88px;
+    bottom: 40px;
+    
+}
+.community__swiper.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset);
+    left: none;
+    right: 40px;
+    bottom: 40px;
+}

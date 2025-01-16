@@ -1,0 +1,124 @@
+.dream-section{
+    margin-top: 100px;
+}
+.dream__content{
+    width: 575px;
+    margin: 0 auto;
+    text-align: center;
+}
+.dream-section__title{
+   @include TextStyle($fontSize:36px,$fontWeight:600,$lineHeight:43.88px,$color:var(--clr-black));
+}
+.dream-section__text{
+   @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--bg-clr-white));
+}
+.dream__nav{
+    width: 476px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.dream__list{
+   @include Display($space:center);
+    gap: 16px;
+}
+.dream__item-btn{
+    border: 0;
+    outline: none;
+    width: 155px;
+    height: 58px;
+    border-radius: 100px;
+    background-color: var(--clr-green);
+}
+.dream__item-btn:hover{
+    border-color: var(--clr-black);
+    background-color:var(--bg-clr-white);
+    color: var(--clr-black);
+}
+ .dream__list .dream__item:first-child .dream__item-btn{
+    background-color: var(--clr-green);
+    color: var(--bg-clr-white);
+    border: 2px solid transparent;
+ }
+ .dream__list .dream__item:first-child .dream__item-btn:hover{
+    border-color: var(--clr-green);
+    background-color: var(--bg-clr-white);
+    color: var(--clr-black);
+ }
+ .dream__item-btn{
+    background-color: var(--bg-clr-white);
+    @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--clr-black));
+    border:1.5px solid #E5E7EA;
+ }
+ .dream__cards{
+    width: 1200px;
+    margin: 0 auto;
+    @include Display($space:center);
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+ .dream-section .container{
+    padding: 0;
+ }
+ .dream__card{
+    width: 386.6px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 24px;
+    background-color: var(--clr-gray);
+    margin-bottom: 40px;
+ }
+ .dream__card:hover{
+    background-color: var(--clr-green);
+ }
+ .dream__card:hover h3{
+    color: white;
+ }
+ .dream__card:hover p{
+    color: var(--bg-clr-white);
+ }
+ .dream__card:hover li{
+    color: var(--bg-clr-white);
+ }
+
+ .dream__card-title{
+   @include TextStyle($fontSize:24px,$fontWeight:600,$lineHeight:29.26px,$color:var(--clr-black));
+ }
+ .dream__card-text{
+   @include TextStyle($marginTop:8px,$fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--input-plc-clr));
+ }
+ .dream__card-image{
+    margin: 16px 0;
+ }
+ .dream__car-features{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+    margin: 0;
+    margin-left: 20px;
+ }
+ .dream-car-feature{
+   @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--clr-black));
+    gap: 12px;
+    @include Display($space:none);
+ }
+ .button-list-bnt-dream{
+    width: 173px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    @include TextStyle($padding:18px 0,$fontSize:18px,$fontWeight:500,$lineHeight:22px,$color:var(--bg-clr-white));
+    border-radius: 100px;
+    color: var(--bg-clr-white);
+    margin-bottom: 160px;
+    border: 2px solid transparent;
+ }
+ .button-list-bnt-dream:hover{
+    border-color: var(--clr-green);
+    background-color: var(--bg-clr-white);
+    color: var(--clr-green);
+ }
+

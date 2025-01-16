@@ -1,6 +1,6 @@
 .site-header{
     padding: 18px 0;
-    border-bottom: 1.5px solid #626262
+    border-bottom: 1.5px solid #E5E7EA
 }
 
 .header{
@@ -13,22 +13,29 @@
 .navbar{
     @include Display($space:start);
 }
-
+.navbar-item{
+    position: relative;
+}
 .navbar__link{
     position: relative;
-    @include TextStyle($MT:0,$P:18px 16px,$FS:18px,$FW:500,$LH:21.94px,$CLR:var(--clr-black));
+    @include TextStyle($marginTop:0,$padding:18px 16px,$fontSize:18px,$fontWeight:500,$lineHeight:21.94px,$color:var(--clr-black));
+    z-index: 5;
 }
+
 .navbar__item:nth-child(2) > .navbar__link, .navbar__item:nth-child(3) > .navbar__link{
+    cursor: pointer;
     padding-right: 30px;
 }
-.navbar__item:nth-child(2) > .navbar__link::before, .navbar__item:nth-child(3) > .navbar__link::before{
+.navbar__item:nth-child(2) > .navbar__link::after,
+.navbar__item:nth-child(3) > .navbar__link::after{
     content: "";
-    @include BacgroundImage($BI:url("../../images/Icon.svg"),$BR:no-repeat,$BS:100%);
+    @include Background($url:"../../images/Icon.svg",$bg-repeat:no-repeat,$size:100%);
     width: 12px;
     height: 8px;
     display: inline-block;
-    @include Position($PN:absolute,$R:8px,$T:0,$L:0,$B:0);
+    @include Position($status: absolute, $right: 8px,$top:0,$bottom:0,$left:none);
     margin: auto 0;
+    transition: 0.3s all;
 }
 
 .header__right-wrapper{
@@ -36,7 +43,7 @@
 }
 .header__phone-number{
     margin-right: 24px;
-    @include TextStyle($MT:0,$P:18px,$FS:18px,$FW:600,$LH:21.94px,$CLR:var(--clr-black));
+    @include TextStyle($marginTop:0,$padding:18px,$fontSize:18px,$fontWeight:600,$lineHeight:21.94px,$color:var(--clr-black));
 }
 .header__mode-btn{
     @include Display($space:center);
@@ -50,10 +57,63 @@
 }
 .header__logout-btn{
     @include Display($space:start);
-    @include TextStyle($MT:0,$P:18px 30px,$FS:18px,$FW:500,$LH:21.94px,$CLR:var(--clr-white));
+    @include TextStyle($marginTop:0,$padding:18px 30px,$fontSize:18px,$fontWeight:500,$lineHeight:21.94px,$color:white);
     font-family: "Montserrat", sans-serif;
     background-color: var(--clr-green);
     border-radius: 100px;
+    outline: none;
     border: none;
     gap: 8px;
+    cursor: pointer;
 }
+
+.popop__wrapper{
+
+    top: 67px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 0px #00000026;
+
+}
+
+.popop__link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    float: none;
+    color: black;
+    padding: 18px 0 18px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar__item:nth-child(3):hover > .popop__wrapper{
+    background-color: var(--clr-white);
+    width: 169px;
+    height: 136px;
+    padding: 10px;
+    border: 1px solid transparent;
+    opacity: 100%;
+    display: block;
+}
+.navbar__item:nth-child(2):hover > .popop__wrapper{
+    background-color: var(--clr-white);
+    width: 147px;
+    height: 194px;
+    padding: 10px;
+    border: 1px solid transparent;
+    opacity: 100%;
+    display: block;
+}
+
+.change-btn{
+    background-color: #272727;
+    color: white;
+}
+

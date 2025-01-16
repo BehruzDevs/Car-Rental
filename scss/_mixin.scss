@@ -5,25 +5,31 @@
     justify-content: $space;
 }
 
-@mixin TextStyle($MT,$P,$FS,$FW,$LH,$CLR){
-    margin-top: $MT;
-    padding: $P;
-    font-size: $FS;
-    font-weight: $FW;
-    line-height: $LH;
-    color: $CLR;
+@mixin TextStyle($marginTop: null, $padding: null, $fontSize, $fontWeight, $lineHeight, $color) {
+    margin-top: $marginTop;
+    padding: $padding;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: $color;
 }
-@mixin Position($PN,$T,$L,$R,$B){
-    position: $PN;
-    top: $T;
-    left: $L;
-    right: $R;
-    bottom: $B;
+
+@mixin Position($status, $top:null, $left:null, $right:null, $bottom:mull) {
+    position: $status;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
 }
-@mixin BacgroundImage($BI,$BC,$BP,$BR,$BS){
-    background-image: $BI; 
-    background-color: $BC; 
-    background-position: $BP;
-    background-repeat: $BR;
-    background-size: $BS;
+
+
+
+@mixin Background($url, $position: center, $bg-repeat: no-repeat, $size: cover) {
+    background-image:url($url);
+    background-position: $position;
+    background-repeat: $bg-repeat;
+    background-size: $size;
 }
+
+  
+  

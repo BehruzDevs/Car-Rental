@@ -1,0 +1,14 @@
+.brands-section {
+  padding-top: 160px;
+}
+
+.brands-wrapper {
+  width: 1170px;
+}
+
+.brands__list {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  gap: 66px;
+}/*# sourceMappingURL=brands.css.map */

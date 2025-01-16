@@ -3,4 +3,16 @@
     --clr-black:#000;
     --clr-white:white;
     --clr-green:#299764;
+    --clr-black:#000000;
+    --clr-gray:#F5F5F5;
+    --input-plc-clr:#555555;
+    --clr-line:#E5E7EA;
+}
+.dark{
+    background-color: #000;
+    --input-plc-clr:white;
+    --clr-gray:#272727;
+    --clr-black:white;
+    --clr-white:#000;
+    --clr-green:#299764;
 }

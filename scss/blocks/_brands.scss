@@ -1,0 +1,16 @@
+.brands-section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.brands-title{
+    @include TextStyle($fontSize:24px,$fontWeight:500,$lineHeight:29.26px,$color:var(--clr-black));
+}
+.brands-wrapper {
+    width: 1170px;
+}
+.brands__list {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    gap: 66px;
+}
