@@ -1027,12 +1027,15 @@ body {
 
 .top-btn-slider {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   right: 120px;
   bottom: 40px;
   border-radius: 100px;
   background-color: var(--clr-green);
   width: 70px;
   height: 70px;
-  outline: none;
   border: none;
 }/*# sourceMappingURL=main.css.map */
