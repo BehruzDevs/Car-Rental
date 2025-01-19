@@ -1,108 +1,153 @@
-.hero-section {
+.hero-section{
     margin-top: 20px;
 }
 
 .swiper {
-    width: 100% !important;
-    height: 500px !important;
-    border-radius: 30px !important;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
     position: relative !important;
 }
 
 .swiper-slide {
     padding-top: 60px;
     border-radius: 30px;
-    @include Background($url: "../../images/hero1.png", $bg-repeat: no-repeat, $size: cover);
+    background-image: url("../images/hero1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .swiper-slide:nth-child(2) {
-    @include Background($url: "../../images/hero2.png");
+    background-image: url("../images/hero2.png");
 }
 
 .swiper-slide:nth-child(3) {
-    @include Background($url: "../../images/hero3.png");
+    background-image: url("../images/hero3.png");
 }
+
+
 .swiper-slide img {
     display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-.swiper-pagination-bullet {
+
+.swiper-pagination-bullet{
     transition: all 0.3s !important;
     background-color: #FFFFFF !important;
     opacity: 50% !important;
     width: 8px !important;
     height: 8px !important;
 }
-
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active{
     opacity: 100% !important;
     width: 30px !important;
     border-radius: 10px !important;
 }
 
-.swiper-pagination {
+.swiper-pagination{
     text-align: start !important;
     transform: translate(40px, -25px) !important;
 }
 
 .swiper__content-wrapper {
-    width: 416px;
+    max-width: 416px;
     margin: 0 auto;
 }
-
 .swiper__title {
     margin-bottom: 10px;
-    @include TextStyle($fontSize: 36px, $fontWeight: 600, $lineHeight: 43.88px, $color: white);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.88px;
     text-align: center;
-}
-
-.swiper__text {
-    @include TextStyle($fontSize: 16px, $fontWeight: 400, $lineHeight: 19.5px, $color: white);
     color: white;
+}
+.swiper__text {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
     text-align: center;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next, .swiper-button-prev{
     width: 36px !important;
     height: 36px !important;
     border-radius: 50%;
     background-color: white;
-    @include Display($space: center);
+    @include Display($space:center);
     color: #000 !important;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after, .swiper-button-prev::after{
     font-size: 10px !important;
 }
 
-.hero__form {
+.hero__form{
     z-index: 9999;
     margin: 0 auto;
     margin-top: -33px;
     position: relative;
     width: 600px;
-    @include Display($space: start);
+    @include Display($space:start);
     background-color: white;
     border-radius: 100px;
     overflow: hidden;
     box-shadow: 0px 4px 10px 0px #00000026;
 }
-
 .hero__form-input {
     width: 88%;
-    @include TextStyle($fontSize: 18px, $fontWeight: 500, $lineHeight: 21.94px, $color: #555555, $padding: 22px 0);
+    padding: 22px 0;
     padding-left: 30px;
     background-color: transparent;
     outline: none;
     border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #555555;
+    
 }
-
 .hero__form-btn {
-    @include Position($status: absolute, $right: 3px, $top: none, $bottom: none, $left: none);
+    position: absolute;
+    right: 3px;
     width: 58px;
     height: 58px;
     border-radius: 50%;
     background-color: var(--clr-green);
     border: none;
     color: white;
+}
+
+// 0 - 1053px Tablet part , Planshetlarda qanday korinishi
+@media (max-width:1053px){
+    .swiper-slide{
+        background-position: center;
+    }
+    .swiper-slide:nth-child(1){
+        background-image: url("../../images/hero-tablet.png");
+    }
+}
+
+// 0 - 730px Mobile holati , Telefonlar holati
+@media (max-width:730px){
+    .swiper-slide{
+        padding-top: 40px;
+    }
+    .swiper-slide:nth-child(1){
+        background-image: url("../../images/hero-mobile.png");
+    }
+    .hero__form{
+        width: 100%;
+    }
+    .swiper-pagination{
+        display: flex;
+        justify-content: center;
+        transform: translate(0, -40px) !important;
+    }
+    .swiper__title{
+        font-size: 24px;
+        line-height: 29.26px;
+    }
 }

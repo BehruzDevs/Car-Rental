@@ -3,7 +3,7 @@
 }
 .service__content-top {
     margin: 0 auto;
-    width: 648px;
+    max-width: 648px;
     text-align: center;
 }
 .service__top-title {
@@ -21,14 +21,15 @@
     flex-wrap: wrap;
 }
 .service__card{
+    width: 100%;
     position: relative;
-    width: 590px;
+    max-width: 590px;
     padding: 40px 40px 40px 32px;
     border-radius: 20px;
     background-color: var(--clr-gray);
 }
 .service__card-content{
-    width: 354px;
+    max-width: 354px;
     text-align: start;
 }
 .service__card-title {
@@ -51,8 +52,8 @@
     background-position-x:92% ;
 }
 .services__footer-wrapper {
-    width: 100%;
-    width: 590px;
+    max-width: 100%;
+    max-width: 590px;
 }
 .services__footer-title {
     @include TextStyle($fontSize:36px,$fontWeight:600,$lineHeight:43.88px,$color:var(--clr-black))
@@ -71,7 +72,7 @@
     border-radius:16px;
     background-color: var(--clr-gray);
     position: relative;
-    width: 200px;
+    max-width: 200px;
 }
 .service-footer_item-text {
     @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
@@ -83,4 +84,46 @@
     position: absolute;
     top: 20px;
     right:20px;
+}
+@media (max-width:1053px){
+    
+    .service__main{
+        margin: 120px 0;
+    }
+    .service__card-wrapper{
+        margin-top: 30px;
+    }
+    .service__card{
+        padding: 30px 0 30px 24px;
+        max-width: 387px;
+    }
+    .service__card-title {
+        width: 252px;
+        @include TextStyle($fontSize:32px,$fontWeight:500,$lineHeight:39.01px,$color:var(--clr-black))
+    }
+    .service__card-text {
+        @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr));
+    }
+}
+@media (max-width:730px){
+    .service__main{
+        margin: 100px 0;
+    }
+    .service__top-title{
+      
+        @include TextStyle($fontSize:28px, $fontWeight:600,$lineHeight:34.13px,$color:var(--clr-black));
+    }
+    .service__top-text{
+        @include TextStyle($marginTop:6px,$fontSize:14px, $fontWeight:400,$lineHeight:20px,$color:var(--input-plc-clr));
+    }
+    .service__card{
+        max-width: 358px;
+        width: 100%;
+    }
+    .service__card-text {
+        @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr));
+    }
+    .service__card-title{
+        width: 244px;
+    }
 }

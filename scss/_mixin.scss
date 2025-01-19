@@ -5,7 +5,7 @@
     justify-content: $space;
 }
 
-@mixin TextStyle($marginTop: null, $padding: null, $fontSize, $fontWeight, $lineHeight, $color) {
+@mixin TextStyle($marginTop: 0,$padding: 0,$fontSize: 16px,$fontWeight: 400,$lineHeight: 1.5,$color: black) {
     margin-top: $marginTop;
     padding: $padding;
     font-size: $fontSize;
@@ -14,7 +14,7 @@
     color: $color;
 }
 
-@mixin Position($status, $top:null, $left:null, $right:null, $bottom:mull) {
+@mixin Position($status,$top:auto,$left:auto, $right:auto, $bottom:auto) {
     position: $status;
     top: $top;
     left: $left;
@@ -24,7 +24,7 @@
 
 
 
-@mixin Background($url, $position: center, $bg-repeat: no-repeat, $size: cover) {
+@mixin Background($url, $position, $bg-repeat, $size) {
     background-image:url($url);
     background-position: $position;
     background-repeat: $bg-repeat;

@@ -2,7 +2,7 @@
     margin-top: 100px;
 }
 .dream__content{
-    width: 575px;
+    max-width: 575px;
     margin: 0 auto;
     text-align: center;
 }
@@ -13,7 +13,7 @@
    @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--bg-clr-white));
 }
 .dream__nav{
-    width: 476px;
+    max-width: 476px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 24px;
@@ -23,10 +23,8 @@
     gap: 16px;
 }
 .dream__item-btn{
-    border: 0;
+   border: none;
     outline: none;
-    width: 155px;
-    height: 58px;
     border-radius: 100px;
     background-color: var(--clr-green);
 }
@@ -35,90 +33,123 @@
     background-color:var(--bg-clr-white);
     color: var(--clr-black);
 }
- .dream__list .dream__item:first-child .dream__item-btn{
+ .dream__item-btn:hover{
+    border-color: transparent;
     background-color: var(--clr-green);
-    color: var(--bg-clr-white);
-    border: 2px solid transparent;
- }
- .dream__list .dream__item:first-child .dream__item-btn:hover{
-    border-color: var(--clr-green);
-    background-color: var(--bg-clr-white);
-    color: var(--clr-black);
+    color: var(--clr-white);
  }
  .dream__item-btn{
     background-color: var(--bg-clr-white);
-    @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--clr-black));
+    @include TextStyle($padding:19px 40px,$fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--clr-black));
     border:1.5px solid #E5E7EA;
  }
  .dream__cards{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     @include Display($space:center);
     flex-wrap: wrap;
     gap: 20px;
  }
- .dream-section .container{
-    padding: 0;
- }
  .dream__card{
-    width: 386.6px;
+    max-width: 386.6px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    padding: 30px 24px;
     background-color: var(--clr-gray);
-    margin-bottom: 40px;
  }
  .dream__card:hover{
     background-color: var(--clr-green);
  }
  .dream__card:hover h3{
-    color: white;
+   color: var(--clr-white);
  }
  .dream__card:hover p{
-    color: var(--bg-clr-white);
+    color: var(--clr-white);
  }
  .dream__card:hover li{
-    color: var(--bg-clr-white);
+    color: var(--clr-white);
  }
 
  .dream__card-title{
-   @include TextStyle($fontSize:24px,$fontWeight:600,$lineHeight:29.26px,$color:var(--clr-black));
+   @include TextStyle($padding:30px 0 0 24px,$fontSize:24px,$fontWeight:600,$lineHeight:29.26px,$color:var(--clr-black));
  }
  .dream__card-text{
-   @include TextStyle($marginTop:8px,$fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--input-plc-clr));
+   @include TextStyle($padding:0 0 0 24px,$marginTop:8px,$fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--input-plc-clr));
  }
  .dream__card-image{
     margin: 16px 0;
+    width: 387px;
+    height: 220px;
  }
  .dream__car-features{
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 24px;
+    gap: 24px;
     margin: 0;
     margin-left: 20px;
+    padding: 0 24px 30px 24px;
  }
  .dream-car-feature{
    @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:19.5px,$color:var(--clr-black));
     gap: 12px;
-    @include Display($space:none);
+    display: flex;
+    align-self: center;
  }
  .button-list-bnt-dream{
-    width: 173px;
     border: none;
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    @include TextStyle($padding:18px 0,$fontSize:18px,$fontWeight:500,$lineHeight:22px,$color:var(--bg-clr-white));
+    @include TextStyle($padding:18px 30px,$fontSize:18px,$fontWeight:500,$lineHeight:22px,$color:var(--bg-clr-white));
     border-radius: 100px;
     color: var(--bg-clr-white);
     margin-bottom: 160px;
     border: 2px solid transparent;
+    margin-top: 40px;
  }
  .button-list-bnt-dream:hover{
-    border-color: var(--clr-green);
-    background-color: var(--bg-clr-white);
-    color: var(--clr-green);
+    border-color: var(--clr-gray);
+    background-color: var(--clr-green);
+    color: var(--clr-white);
  }
-
+ @media (max-width:1053px){
+   .dream-car-feature{
+      gap: 10px;
+   }
+   .dream__cards{
+      gap: 20px;
+   }
+   .dream-card{
+      margin-bottom: 0;
+   }
+   .dream__card-image{
+      padding: 0 24px 0 0
+   }
+ }
+@media (max-width:730px){
+   .dream-section__title{
+      @include TextStyle(
+         $fontSize:24px,$fontWeight:600,$lineHeight:29.26px,$color:var(--clr-black)
+      )
+   }
+   .dream-section__text{
+      @include TextStyle($marginTop:8px,$fontSize:12px,$fontWeight:400,$lineHeight:14.63px,$color:var(--input-plc-clr))
+   }
+   .dream__item-btn{
+      @include TextStyle($padding:14px 20px,$fontSize:14px,$fontWeight:500,$lineHeight:17.07px,$color:var(--clr-black))
+   }
+   .dream__car-features{
+      gap: 10px;
+   }
+   .dream__cards{
+      gap: 10px;
+   }
+   .dream__card{
+      margin-bottom: 0;
+      width: 358px;
+   }
+   .dream__card-image{
+      padding: 0 24px 0 0
+   }
+}

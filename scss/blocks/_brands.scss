@@ -5,7 +5,7 @@
     @include TextStyle($fontSize:24px,$fontWeight:500,$lineHeight:29.26px,$color:var(--clr-black));
 }
 .brands-wrapper {
-    width: 1170px;
+    max-width: 1170px;
 }
 .brands__list {
     margin-top: 34px;
@@ -13,3 +13,17 @@
     align-items: center;
     gap: 66px;
 }
+@media (max-width:1053px){
+    .brands-section{
+        padding-top: 120px;
+    }
+}
+@media (max-width:730px){
+    .brands-title{
+        @include TextStyle($fontSize:20px,$fontWeight:500,$lineHeight:24.38px,$color:var(--clr-black));
+    }
+    .brands__list{
+        margin-top: 24px;
+    }
+}
+    
