@@ -1177,6 +1177,7 @@ body {
 }
 
 .footer-right-wrapper {
+  width: 100%;
   max-width: 895px;
   padding-top: 24px;
 }

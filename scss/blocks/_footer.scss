@@ -16,6 +16,7 @@
     @include TextStyle($marginTop:84px,$fontSize:16px,$fontWeight:500,$lineHeight:24px,$color:var(--clr-black));
 }
 .footer-right-wrapper {
+    width: 100%;
     max-width: 895px;
     padding-top: 24px;
 }
