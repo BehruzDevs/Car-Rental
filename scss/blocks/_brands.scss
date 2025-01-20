@@ -1,5 +1,6 @@
 .brands-section {
     padding-top: 160px;
+    padding-bottom: 160px;
 }
 .brands-title{
     @include TextStyle($fontSize:24px,$fontWeight:500,$lineHeight:29.26px,$color:var(--clr-black));
@@ -16,6 +17,7 @@
 @media (max-width:1053px){
     .brands-section{
         padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 @media (max-width:730px){

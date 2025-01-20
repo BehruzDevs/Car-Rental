@@ -1,6 +1,6 @@
 .footer{
     position: relative;
-    padding: 40px 0;
+    padding: 40px 20px;
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 .footer__left-bottom {
     padding-right: 153px;
-    @include TextStyle($marginTop:84px,$fontSize:16px,$fontWeight:500,$lineHeight:24px,$color:var(--clr-black));
+    @include TextStyle($marginTop:84px,$padding:0 153px 0 0,$fontSize:16px,$fontWeight:500,$lineHeight:24px,$color:var(--clr-black));
 }
 .footer-right-wrapper {
     width: 100%;
@@ -82,3 +82,26 @@
     height: 70px;
     border: none;
 }
+@media (max-width:1055px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-left-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-left-bottom{
+        width: 128px;
+    }
+    .footer-right-top{
+        width: 100%;
+    }
+    .footer__left-bottom{
+        width: 157px;
+        margin: 0;
+        padding: 0;
+    }
+}
+

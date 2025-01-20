@@ -62,7 +62,7 @@
 }
 .header__logout-btn{
     @include Display($space:start);
-    @include TextStyle($marginTop:0,$padding:18px 30px,$fontSize:18px,$fontWeight:500,$lineHeight:21.94px,$color:var(--clr-white));
+    @include TextStyle($marginTop:0,$padding:18px 30px,$fontSize:18px,$fontWeight:500,$lineHeight:21.94px,$color:#fff);
     font-family: "Montserrat", serif;
     background-color: var(--clr-green);
     border-radius: 100px;
@@ -80,6 +80,8 @@
 
 
 .popop__wrapper {
+    box-shadow: 0px 4px 10px 0px #00000026;
+
     padding: 10px;
     opacity: 0;
     height: 0px;
@@ -92,7 +94,6 @@
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 4px 10px 0px #00000026;
     z-index: 9999;
 }
 .popop__link {

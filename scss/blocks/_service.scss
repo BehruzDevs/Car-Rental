@@ -1,5 +1,5 @@
 .service__main{
-    margin: 160px 0;
+    padding: 0 20px 160px 20px;
 }
 .service__content-top {
     margin: 0 auto;
@@ -22,7 +22,7 @@
     justify-content: center;
 }
 .service__card{
-    width: 100%;
+    max-width: 426px;
     position: relative;
     max-width: 590px;
     padding: 40px 40px 40px 32px;
@@ -53,27 +53,29 @@
     background-position-x:92% ;
 }
 .services__footer-wrapper {
-    max-width: 100%;
+    width: 100%;
     max-width: 590px;
 }
+.service__footer-content{
+    width: 466px;
+}
 .services__footer-title {
-    @include TextStyle($fontSize:36px,$fontWeight:600,$lineHeight:43.88px,$color:var(--clr-black))
+    @include TextStyle($fontSize:36px,$fontWeight:600,$lineHeight:43.88px,$color:var(--clr-black));
 }
 .services__footer-text {
-    @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr))
+    @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr));
 }
 .service__footer-list {
     margin-top: 94px;
     gap: 10px;
     @include Display($space:none);
+    align-items: normal;
 }
 .service__footer-item {
-    padding: 15px;
-    padding-top: 79px;
     border-radius:16px;
     background-color: var(--clr-gray);
     position: relative;
-    max-width: 200px;
+    width: 200px;
 }
 .service-footer_item-text {
     @include TextStyle($fontSize:16px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
@@ -86,29 +88,92 @@
     top: 20px;
     right:20px;
 }
+.service__footer-item:nth-child(1){
+    padding: 80px 15px 15px 15px;
+}
+.service__footer-item:nth-child(2){
+    padding: 79px 15px 15px 15px;
+}
+.service__footer-item:nth-child(3){
+    padding: 88px 15px 15px 15px;
+}
 @media (max-width:1053px){
-    
     .service__main{
-        margin: 120px 0;
+        padding-bottom: 120px;
     }
     .service__card-wrapper{
         margin-top: 30px;
     }
     .service__card{
-        padding: 30px 0 30px 24px;
+        padding:30px 19px 30px 24px;
         max-width: 387px;
     }
+    .service__card-logo{
+        top: 30px;
+        right: 30px;
+    }
     .service__card-title {
-        width: 252px;
+        width: 278px;
+        height: 165px;
         @include TextStyle($fontSize:32px,$fontWeight:500,$lineHeight:39.01px,$color:var(--clr-black))
     }
     .service__card-text {
         @include TextStyle($marginTop:10px,$fontSize:16px,$fontWeight:400,$lineHeight:24px,$color:var(--input-plc-clr));
     }
+    .service__card>.service__card-content:nth-child(3){
+        width: 364px;
+    }
+    .service__footer{
+        border: 1.5px solid var(--clr-line);
+        border-radius: 20px;
+        background-image: url(./../../images/services_footer.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 284px 367px;
+        background-position-x: 100%;
+        padding: 24px 30px;
+    }
+   
+    .services__footer-wrapper{
+        width: 466px;
+    }
+    .service__footer-list{
+        margin-top: 35px;
+        gap: 8PX;
+    }
+    .service-footer_item-text{
+        @include TextStyle($fontSize:14px,$fontWeight:500,$lineHeight:22px)
+    }
+    .service__footer-item{
+        width: 140px;
+    }
+    .service__footer-item:nth-child(1){
+        padding: 69px 10px 8px 10px;
+    }
+    .service__footer-item:nth-child(2){
+        padding: 85px 10px 14px 10px;
+    }
+    .service__footer-item:nth-child(3){
+        padding: 63px 10px 14px 10px;
+    }
+    .services__footer-wrapper {
+        width: 100%;
+        max-width: 447px;
+    }
+    .service__footer-content{
+        width: 466px;
+    }
+    .service-footer_item-text {
+        @include TextStyle($fontSize:14px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
+    }
 }
-@media (max-width:730px){
+@media (max-width:776px){
+    .service__footer{
+        @include Background($url:"./../../images/Ellipse.svg",$position:top right,$bg-repeat:no-repeat,$size:160px 160px);
+    }
+    
     .service__main{
-        margin: 100px 0;
+        padding-bottom: 100px;
     }
     .service__top-title{
       
@@ -127,4 +192,31 @@
     .service__card-title{
         width: 244px;
     }
+    .services__footer-wrapper{
+        width: 400px;
+    }
+    .service__footer-item{
+        width: 318px;
+    }
+    .service__footer-item:nth-child(1){
+        padding: 70px 6px 14px 14px;
+    }
+    .service__footer-item:nth-child(2){
+        padding: 70px 15px 14px 14px;
+    }
+    .service__footer-item:nth-child(3){
+        padding: 48px 15px 14px 14px;
+    }
+    .services__footer-wrapper {
+        width: 100%;
+        max-width: 321px;
+    }
+    .service__footer-content{
+        width: 183px;
+    }
+    .service-footer_item-text {
+    @include TextStyle($fontSize:14px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
+    }
 }
+
+// 80 79 88
