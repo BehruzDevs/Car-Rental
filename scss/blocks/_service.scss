@@ -151,10 +151,10 @@
         padding: 74px 10px 8px 10px;
     }
     .service__footer-item:nth-child(2){
-        padding: 85px 10px 14px 10px;
+        padding:90px 10px 14px 10px;
     }
     .service__footer-item:nth-child(3){
-        padding: 63px 10px 14px 10px;
+        padding: 79px 10px 14px 10px;
     }
     .services__footer-wrapper {
         width: 100%;
@@ -216,9 +216,6 @@
     .services__footer-wrapper {
         width: 100%;
         max-width: 321px;
-    }
-    .service__footer-content{
-        width: 183px;
     }
     .service-footer_item-text {
     @include TextStyle($fontSize:14px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
