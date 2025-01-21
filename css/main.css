@@ -944,7 +944,7 @@ body {
     padding: 30px 20px;
   }
   .community__wrapper {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .community__text-wrapper {
     width: 794px;
@@ -1055,6 +1055,9 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .brands-wrapper {
+    text-align: center;
+  }
 }
 @media (max-width: 730px) {
   .brands-title {
@@ -1064,6 +1067,9 @@ body {
     font-weight: 500;
     line-height: 24.38px;
     color: var(--clr-black);
+  }
+  .brands-wrapper {
+    text-align: center;
   }
   .brands__list {
     margin-top: 24px;
@@ -1198,7 +1204,7 @@ body {
   width: 200px;
 }
 
-.service-footer_item-text {
+.service-footer__item-text {
   margin-top: 0;
   padding: 0;
   font-size: 16px;
@@ -1282,7 +1288,7 @@ body {
     margin-top: 35px;
     gap: 8PX;
   }
-  .service-footer_item-text {
+  .service-footer__item-text {
     margin-top: 0;
     padding: 0;
     font-size: 14px;
@@ -1309,7 +1315,7 @@ body {
   .service__footer-content {
     width: 466px;
   }
-  .service-footer_item-text {
+  .service-footer__item-text {
     margin-top: 0;
     padding: 0;
     font-size: 14px;
@@ -1323,7 +1329,7 @@ body {
     background-image: url("./../../images/Ellipse.svg");
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 160px 160px;
+    background-size: 90px 90px;
   }
   .service__footer-list {
     flex-wrap: wrap;
@@ -1385,7 +1391,7 @@ body {
     width: 100%;
     max-width: 321px;
   }
-  .service-footer_item-text {
+  .service-footer__item-text {
     margin-top: 0;
     padding: 0;
     font-size: 14px;
@@ -1408,6 +1414,13 @@ body {
     font-weight: 400;
     line-height: 20px;
     color: black;
+  }
+  .service__footer-content {
+    max-width: 183px;
+    width: 100%;
+  }
+  .service__footer {
+    padding: 24px 17px 24px 20px;
   }
 }
 .footer {
@@ -1526,6 +1539,41 @@ body {
   margin-top: 12px;
 }
 
+.footer-right__bottom-social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-right__bottom-social-link:nth-child(1):hover {
+  color: white;
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+}
+
+/* Ikkinchi element hover */
+.footer-right__bottom-social-link:nth-child(2):hover {
+  color: white;
+  background-color: #55ACE3;
+}
+
+/* Uchinchi element hover */
+.footer-right__bottom-social-link:nth-child(3):hover {
+  color: white;
+  background-color: #0B84EE;
+}
+
+/* To'rtinchi element hover */
+.footer-right__bottom-social-link:nth-child(4):hover {
+  color: white;
+  background-color: #48C95F;
+}
+
 .top-btn-slider {
   position: absolute;
   display: flex;
@@ -1547,6 +1595,7 @@ body {
   }
   .footer-left-wrapper {
     width: 100%;
+    max-width: 794px !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1561,5 +1610,69 @@ body {
     width: 157px;
     margin: 0;
     padding: 0;
+  }
+  .footer-right-top {
+    width: 100%;
+    max-width: 794px !important;
+  }
+  .footer-right-bottom {
+    width: 100%;
+    max-width: 606px !important;
+  }
+}
+@media (max-width: 772px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-left-wrapper {
+    width: 100%;
+    max-width: 358px !important;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .footer_left-top {
+    width: 200px !important;
+  }
+  .footer_left-top img {
+    width: 100px;
+    height: 26px;
+  }
+  .footer__left-bottom {
+    width: 138px !important;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: black;
+    margin-top: 42px;
+  }
+  .footer_left-title {
+    margin-top: 16px;
+  }
+  .footer-right-wrapper {
+    width: 100%;
+    max-width: 358px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-right-top {
+    display: grid;
+    grid-template-columns: 45% 55%; /* Birinchi ustun 40%, ikkinchi ustun 60% */
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+    width: 100%;
+    max-width: 368px !important;
+  }
+  .footer-right-bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 40%;
+    grid-row-gap: 40px;
+    width: 100%;
+    max-width: 368px !important;
   }
 }/*# sourceMappingURL=main.css.map */

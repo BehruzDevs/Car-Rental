@@ -19,10 +19,16 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    .brands-wrapper{
+        text-align: center;
+    }
 }
 @media (max-width:730px){
     .brands-title{
         @include TextStyle($fontSize:20px,$fontWeight:500,$lineHeight:24.38px,$color:var(--clr-black));
+    }
+    .brands-wrapper{
+        text-align: center;
     }
     .brands__list{
         margin-top: 24px;
