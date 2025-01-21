@@ -148,7 +148,7 @@
         width: 140px;
     }
     .service__footer-item:nth-child(1){
-        padding: 69px 10px 8px 10px;
+        padding: 74px 10px 8px 10px;
     }
     .service__footer-item:nth-child(2){
         padding: 85px 10px 14px 10px;
@@ -171,7 +171,13 @@
     .service__footer{
         @include Background($url:"./../../images/Ellipse.svg",$position:top right,$bg-repeat:no-repeat,$size:160px 160px);
     }
-    
+    .service__footer-list{
+        flex-wrap: wrap;
+    }
+    .service__footer-item{
+        width: 100%;
+        max-width: 316px;
+    }
     .service__main{
         padding-bottom: 100px;
     }
@@ -217,6 +223,10 @@
     .service-footer_item-text {
     @include TextStyle($fontSize:14px,$fontWeight:500,$lineHeight:22px,$color:var(--clr-black));
     }
+    .services__footer-title {
+        @include TextStyle($fontSize:24px,$fontWeight:600,$lineHeight:29.26px);
+    }
+    .services__footer-text{
+        @include TextStyle($fontSize:12px,$lineHeight:20px,$fontWeight:400);
+    }
 }
-
-// 80 79 88
